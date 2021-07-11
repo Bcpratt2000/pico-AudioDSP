@@ -1,4 +1,4 @@
-# Install script for directory: /home/ben/programming/pico/testing/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset
+# Install script for directory: /home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

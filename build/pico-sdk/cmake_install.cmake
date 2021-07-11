@@ -1,4 +1,4 @@
-# Install script for directory: /home/ben/programming/pico/testing/pico-sdk
+# Install script for directory: /home/ben/programming/pico/pico-AudioDSP/pico-sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ben/programming/pico/testing/build/pico-sdk/tools/cmake_install.cmake")
-  include("/home/ben/programming/pico/testing/build/pico-sdk/src/cmake_install.cmake")
-  include("/home/ben/programming/pico/testing/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/ben/programming/pico/pico-AudioDSP/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/ben/programming/pico/pico-AudioDSP/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/ben/programming/pico/pico-AudioDSP/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

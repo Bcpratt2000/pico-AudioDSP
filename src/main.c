@@ -5,21 +5,29 @@
  */
 
 #include "pico/stdlib.h"
+#include "hardware/pwm.h"
 
 int main() {
 #ifndef PICO_DEFAULT_LED_PIN
 #warning blink example requires a board with a regular LED
 #else
-    const uint LED_PIN = PICO_DEFAULT_LED_PIN;
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN, GPIO_OUT);
-    while (true) {
-        gpio_put(LED_PIN, 1);
-        // sleep_ms(rand()%500);
-        sleep_ms(500);
-        gpio_put(LED_PIN, 0);
-        sleep_ms(500);
-        // sleep_ms(rand()%500);
+    const uint LOUT_PIN = 20;
+    const uint ROUT_PIN = 21;
+
+    gpio_set_function(LOUT_PIN, GPIO_FUNC_PWM);
+    gpio_set_function(ROUT_PIN, GPIO_FUNC_PWM);
+    
+    const uint LOUT_SLICE = pwm_gpio_to_slice_num(LOUT_PIN);
+    const uint ROUT_SLICE = pwm_gpio_to_slice_num(ROUT_PIN);
+
+    // pwm_set_gpio_level(LOUT_PIN, (65535*(rand()%98)+1)/100);
+
+    pwm_set_enabled(LOUT_SLICE, true);
+
+    while(true){
+        pwm_set_gpio_level(LOUT_PIN, (65535*(rand()%98)+1)/100);
+        sleep_ms(1000);
+
     }
 #endif
 }

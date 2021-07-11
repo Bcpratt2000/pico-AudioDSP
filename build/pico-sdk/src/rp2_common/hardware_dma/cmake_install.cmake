@@ -1,4 +1,4 @@
-# Install script for directory: /home/ben/programming/pico/testing/pico-sdk/src/rp2_common/hardware_dma
+# Install script for directory: /home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/hardware_dma
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ben/programming/pico/testing/pico-sdk/docs
+# Install script for directory: /home/ben/programming/pico/pico-AudioDSP/pico-sdk/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
