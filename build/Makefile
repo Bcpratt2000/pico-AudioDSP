@@ -397,6 +397,30 @@ pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : pico-sdk/src/common/pico_util/queue.c.s
 
+pico-sdk/src/rp2_common/hardware_adc/adc.obj: pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+
+pico-sdk/src/rp2_common/hardware_adc/adc.i: pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+pico-sdk/src/rp2_common/hardware_adc/adc.s: pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 pico-sdk/src/rp2_common/hardware_claim/claim.obj: pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_claim/claim.obj
 
@@ -1149,6 +1173,9 @@ help:
 	@echo "... pico-sdk/src/common/pico_util/queue.obj"
 	@echo "... pico-sdk/src/common/pico_util/queue.i"
 	@echo "... pico-sdk/src/common/pico_util/queue.s"
+	@echo "... pico-sdk/src/rp2_common/hardware_adc/adc.obj"
+	@echo "... pico-sdk/src/rp2_common/hardware_adc/adc.i"
+	@echo "... pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... pico-sdk/src/rp2_common/hardware_claim/claim.obj"
 	@echo "... pico-sdk/src/rp2_common/hardware_claim/claim.i"
 	@echo "... pico-sdk/src/rp2_common/hardware_claim/claim.s"

@@ -103,6 +103,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../pico-sdk/src/rp2_common/pico_stdio/include"
   "../pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "../pico-sdk/src/rp2_common/hardware_pwm/include"
+  "../pico-sdk/src/rp2_common/hardware_adc/include"
   )
 
 # The set of dependency files which are needed:
@@ -116,6 +117,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/common/pico_util/datetime.c" "CMakeFiles/main.dir/pico-sdk/src/common/pico_util/datetime.c.obj" "gcc" "CMakeFiles/main.dir/pico-sdk/src/common/pico_util/datetime.c.obj.d"
   "/home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/common/pico_util/pheap.c" "CMakeFiles/main.dir/pico-sdk/src/common/pico_util/pheap.c.obj" "gcc" "CMakeFiles/main.dir/pico-sdk/src/common/pico_util/pheap.c.obj.d"
   "/home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/main.dir/pico-sdk/src/common/pico_util/queue.c.obj" "gcc" "CMakeFiles/main.dir/pico-sdk/src/common/pico_util/queue.c.obj.d"
+  "/home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/hardware_adc/adc.c" "CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" "gcc" "CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d"
   "/home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/hardware_claim/claim.c" "CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "/home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "/home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"

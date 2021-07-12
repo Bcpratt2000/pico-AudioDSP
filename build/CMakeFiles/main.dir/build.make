@@ -702,6 +702,20 @@ CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
+CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: ../pico-sdk/src/rp2_common/hardware_adc/adc.c
+CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ben/programming/pico/pico-AudioDSP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -MF CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d -o CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -c /home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/hardware_adc/adc.c
+
+CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ben/programming/pico/pico-AudioDSP/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/main.c.obj" \
@@ -749,7 +763,8 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
 "CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+"CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
+"CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -800,10 +815,11 @@ main.elf: CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_standard_link/new_del
 main.elf: CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 main.elf: CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 main.elf: CMakeFiles/main.dir/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+main.elf: CMakeFiles/main.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 main.elf: CMakeFiles/main.dir/build.make
 main.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 main.elf: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ben/programming/pico/pico-AudioDSP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX executable main.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ben/programming/pico/pico-AudioDSP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable main.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex main.elf main.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary main.elf main.bin
